@@ -38,7 +38,7 @@ input.addEventListener('keydown', (e) => {
 function renderCard(image) {
     let clone = document.importNode(template_card, true)
     clone.querySelector('#img').src = image
-    fragment.appendChild(clone)  
+    fragment.appendChild(clone)
     main.appendChild(fragment)
 }
 
@@ -49,6 +49,5 @@ function conection(index) {
         .then(data => renderCard(data.message));
     }
     main.innerHTML=""
-    
 }
 
